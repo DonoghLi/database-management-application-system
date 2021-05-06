@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <a class="back" href="/main">Back</a>
+    <h1 class="info_h1">Defence Data</h1>
+    <table class="info_table">
+        <tr>
+            <th>PlayerNum</th>
+            <th>GP</th>
+            <th>GS</th>
+            <th>OREB</th>
+            <th>DREB</th>
+            <th>REB</th>
+            <th>RPG</th>
+            <th>STL</th>
+            <th>SPG</th>
+            <th>BLK</th>
+            <th>BPG</th>
+        </tr>
+        <%for(let i = 0; i < row; i++){%>
+        <tr>
+
+            <td><%=result[i].playerNum%></td>
+            <td><%=result[i].GP%></td>
+            <td><%=result[i].GS%></td>
+            <td><%=result[i].OREB%></td>
+            <td><%=result[i].DREB%></td>
+            <td><%=result[i].REB%></td>
+            <td><%=result[i].RPG%></td>
+            <td><%=result[i].STL%></td>
+            <td><%=result[i].SPG%></td>
+            <td><%=result[i].BLK%></td>
+            <td><%=result[i].BPG%></td>
+
+
+            <td>
+                <a class="delete" href="/defence/del/<%= result[i].playerNum %>">Delete</a>
+                <a class="update" href="/defence/update/<%= result[i].playerNum %>">Update</a>
+            </td>
+        </tr>
+        <%}%>
+        
+    </table>
+
+</body>

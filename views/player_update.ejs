@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <a class="back" href="/player">Back</a>
+    <h1 class="info_h1">Update a player</h1>
+
+    <table class="player_update_table">
+        <form class="form-horizontal" action="/player/update" method="post">
+
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>Num</span>
+                </td>
+                <td>
+                    <input type="hidden" name="num" value="<%=datas[0].num %>">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>Firstname</span>
+                </td>
+                <td>
+                    <input name="firstName" type="text" value="<%=datas[0].firstName %>" class="leipiplugins"
+                        leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>Lastname</span>
+                </td>
+                <td>
+                    <input name="lastName" type="text" value="<%=datas[0].lastName %>" class="leipiplugins"
+                        leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>Dob</span>
+                </td>
+                <td>
+                    <input name="dob" type="text" value="<%=datas[0].dob %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>Position</span>
+            </td>
+            <td>
+                <input name="position" type="text" value="<%=datas[0].position %>" class="leipiplugins"
+                    leipiplugins="text">
+                </td>
+            </tr>
+
+
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>University</span>
+            </td>
+            <td>
+                <input name="university" type="text" value="<%=datas[0].university %>" class="leipiplugins"
+                    leipiplugins="text">
+                </td>
+            </tr>
+
+
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>GamePlayed</span>
+            </td>
+            <td>
+                <input name="gameplayed" type="text" value="<%=datas[0].gamePlayed %>" class="leipiplugins"
+                    leipiplugins="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input class="btn" type="submit" value="submit">
+                </td>
+            </tr>            
+        </form>
+    </table>
+
+</body>
+
+</html>

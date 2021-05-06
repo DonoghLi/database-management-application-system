@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <a class="back" href="/main">Back</a>
+    <h1 class="info_h1">Manager Data</h1>
+    <table class="info_table">
+
+        <tr>
+            <th>StaffNo</th>
+            <th>ManagerNo</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Title</th>
+            <th>TeamName</th>
+
+            <th>
+                <form action="/manager/add" method="get">
+                    <button class="btn add" type="submit">Add</button>
+                </form>
+            </th>
+
+        </tr>
+        <%for(let i = 0; i < row; i++){%>
+        <tr>
+            <td><%=result[i].staffNo%></td>
+            <td><%=result[i].managerNo%></td>
+            <td><%=result[i].firstName%></td>
+            <td><%=result[i].lastName%></td>
+            <td><%=result[i].title%></td>
+            <td><%=result[i].teamName%></td>
+            <td>
+                <a class="delete" href="/manager/del/<%= result[i].staffNo %>">Delete</a>
+                <a class="update" href="/manager/update/<%= result[i].staffNo %>">Update</a>
+            </td>
+        </tr>
+        <%}%>
+        
+    </table>
+
+</body>

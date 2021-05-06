@@ -1,0 +1,235 @@
+/* #007A33 */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    background: #007A33;
+    color: white;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+td{
+    width: auto;
+    border: 1px solid rgb(219, 219, 219);
+
+}
+
+.d-flex {
+    margin-top: 10%;
+}
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0.6em;
+    color: #ffffff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #ffffff;
+    outline: 0;
+}
+
+.btn {
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+}
+
+.btn:hover {
+    color: #007A33;
+}
+
+.btn:hover:after {
+    width: 110%;
+}
+
+
+.update,
+.delete,
+.back {
+    color: white;
+    text-decoration: none;
+}
+
+.back{
+    text-align: center;
+    margin-top: auto;
+}
+
+.add {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 2px;
+    padding: 0.5em 1.75em;
+}
+
+
+/* main */
+
+
+.main_table {
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+.main_table td {
+    border: 2px solid white;
+}
+
+
+.team_btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+}
+
+.main_btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* player */
+
+.player_table {
+    margin-top: 100px;
+}
+
+.player_add_table{
+    margin-top: 100px;
+}
+
+
+.player_add_h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+
+
+/* coach */
+
+.coach_table {
+    margin-top: 100px;
+}
+
+.coach_add_table{
+    margin-top: 100px;
+}
+
+
+.coach_add_h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+/* staff */
+
+.staff_table{
+    margin-top: 50px;
+}
+
+.staff_table_h1{
+    text-align: center;
+}
+
+
+.staff_add_table{
+    margin-top: 100px;
+}
+
+
+/* manager */
+
+.manager_table{
+    margin-top: 50px;
+}
+
+/* sponser  */
+.sponser_table{
+    margin-top: 50px;
+}
+
+/* info */
+
+.info_table{
+    margin-top: 100px;
+}
+
+.info_h1{
+    text-align: center;
+}
+
+/* team  */
+.team_table{
+    margin-top: 300px;
+    font-size: 5ch;
+}
+
+
+/* failure */
+
+.fa-btn{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+.fa-h1{
+    margin-top: 100px;
+
+}
+

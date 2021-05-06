@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <table>
+
+        <a class="back" href="/main">Back</a>
+        <h1 class="info_h1">Until today(<%=today%>), there are <%= count%> matches from 2020-01-03:</h1>
+            <tr>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Site</th>
+                <th>Opp</th>
+                <th>Team</th>
+            </tr>
+            <%for(let i = 0; i < row; i++){%>
+            <tr>
+                <td><%=result[i].date%></td>
+                <td><%=result[i].day%></td>
+                <td><%=result[i].site%></td>
+                <td><%=result[i].opp%></td>
+                <td><%=result[i].team%></td>
+            </tr>
+            <%}%>
+        
+    </table>
+
+</body>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <a class="back" href="/main">Back</a>
+
+    <h1 class="info_h1">All Staff Information</h1>
+    <table class="staff_table">
+
+        <h1 class="staff_table_h1">
+            <form action="/staff" method="post">
+                <span>Limit Staff Number</span>
+                <input name="limit" type="number">
+                <button type="submit">Submit</button>
+            </form>
+        </h1>
+
+
+        <tr>
+            <th>StaffNo</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Title</th>
+            <th>TeamName</th>
+            <th>PlayerID</th>
+
+            <th>
+                <form action="/staff/add" method="get">
+                    <button class="btn add" type="submit">Add</button>
+                </form>
+            </th>
+
+        </tr>
+        <%for(let i = 0; i < row; i++){%>
+        <tr>
+            <td><%=result[i].staffNo%></td>
+            <td><%=result[i].firstName%></td>
+            <td><%=result[i].lastName%></td>
+            <td><%=result[i].title%></td>
+            <td><%=result[i].teamName%></td>
+            <td><%=result[i].playerID%></td>
+            <td>
+                <a class="delete" href="/staff/del/<%= result[i].staffNo %>">Delete</a>
+                <a class="update" href="/staff/update/<%= result[i].staffNo %>">Update</a>
+            </td>
+        </tr>
+        <%}%>
+        
+    </table>
+
+</body>

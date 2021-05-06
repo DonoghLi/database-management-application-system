@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+    <a class="back" href="/assist">Back</a>
+    <h1 class="info_h1">Update a assist data</h1>
+
+    <table>
+        <form class="form-horizontal" action="/assist/update" method="post">
+
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>PlayerNum</span>
+                </td>
+                <td>
+                    <input type="hidden" name="playerNum" value="<%=datas[0].playerNum %>">
+                </td>
+            </tr>
+
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>GP</span>
+                </td>
+                <td>
+                    <input name="GP" type="text" value="<%=datas[0].GP %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>GS</span>
+                </td>
+                <td>
+                    <input name="GS" type="text" value="<%=datas[0].GS %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>AST</span>
+                </td>
+                <td>
+                    <input name="AST" type="text" value="<%=datas[0].AST %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>APG</span>
+                </td>
+                <td>
+                    <input name="APG" type="text" value="<%=datas[0].APG %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>TOPG</span>
+                </td>
+                <td>
+                    <input name="TOPG" type="text" value="<%=datas[0].TOPG %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>ATO</span>
+                </td>
+                <td>
+                    <input name="ATO" type="text" value="<%=datas[0].ATO %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input class="btn" type="submit" value="submit">
+                </td>
+            </tr>
+
+
+        </form>
+    </table>
+
+</body>
+
+</html>

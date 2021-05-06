@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <a class="back" href="/main">Back</a>
+    <h1 class="info_h1">Score Data</h1>
+    <table class="info_table">
+
+        <tr>
+            <th>PlayerNum</th>
+            <th>GP</th>
+            <th>GS</th>
+            <th>MPG</th>
+            <th>PPG</th>
+            <th>FGM</th>
+            <th>FGA</th>
+            <th>FGper</th>
+            <th>3FGM</th>
+            <th>3FGMper</th>
+            <th>FTM</th>
+            <th>FTA</th>
+            <th>FTper</th>
+
+
+        </tr>
+        <%for(let i = 0; i < row; i++){%>
+        <tr>
+
+            <td><%=result[i].playerNum%></td>
+            <td><%=result[i].GP%></td>
+            <td><%=result[i].GS%></td>
+            <td><%=result[i].MPG%></td>
+            <td><%=result[i].PPG%></td>
+            <td><%=result[i].FGM%></td>
+            <td><%=result[i].FGA%></td>
+            <td><%=result[i].FGper%></td>
+            <td><%=result[i].FGM_3%></td>
+            <td><%=result[i].FGMper_3%></td>
+            <td><%=result[i].FTM%></td>
+            <td><%=result[i].FTA%></td>
+            <td><%=result[i].FTper%></td>
+
+            <td>
+                <a class="delete" href="/score/del/<%= result[i].playerNum %>">Delete</a>
+                <a class="update" href="/score/update/<%= result[i].playerNum %>">Update</a>
+            </td>
+        </tr>
+        <%}%>
+        
+    </table>
+
+</body>

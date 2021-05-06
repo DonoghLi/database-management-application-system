@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <a class="back" href="/main">Back</a>
+    <h1 class="info_h1">Player Information</h1>
+    <table class="player_table">
+        <tr>
+            <th>Num</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Dob</th>
+            <th>Position</th>
+            <th>University</th>
+            <th>GamePlayed</th>
+            <th>
+                <form action="/player/add" method="get">
+                    <button class="add btn" type="submit">Add</button>
+                </form>
+            </th>
+
+        </tr>
+        <%for(let i = 0; i < row; i++){%>
+        <tr>
+            <td><%=result[i].num%></td>
+            <td><%=result[i].firstName%></td>
+            <td><%=result[i].lastName%></td>
+            <td><%=result[i].dob%></td>
+            <td><%=result[i].position%></td>
+            <td><%=result[i].university%></td>
+            <td><%=result[i].gamePlayed%></td>
+            <td>
+                <a class="delete" href="/player/del/<%= result[i].num %>">Delete</a>
+                <a class="update" href="/player/update/<%= result[i].num %>">Update</a>
+            </td>
+        </tr>
+        <%}%>
+        
+    </table>
+
+</body>

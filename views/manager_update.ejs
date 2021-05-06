@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <a class="back" href="/manager">Back</a>
+    <h1 class="info_h1">Update a manager data</h1>
+
+    <table>
+        <form class="form-horizontal" action="/manager/update" method="post">
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>StaffNo</span>
+                </td>
+                <td>
+                    <input type="hidden" name="staffNo" value="<%=datas[0].staffNo %>">
+                </td>
+            </tr>
+
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>ManagerNo</span>
+            </td>
+            <td>
+                <input name="managerNo" type="text" value="<%=datas[0].managerNo %>" class="leipiplugins"
+                    leipiplugins="text">
+                </td>
+            </tr>
+    
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>Firstname</span>
+            </td>
+            <td>
+                <input name="firstName" type="text" value="<%=datas[0].firstName %>" class="leipiplugins"
+                    leipiplugins="text">
+                </td>
+            </tr>
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>Lastname</span>
+            </td>
+            <td>
+                <input name="lastName" type="text" value="<%=datas[0].lastName %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>Title</span>
+            </td>
+            <td>
+                <input name="title" type="text" value="<%=datas[0].title %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>TeamName</span>
+            </td>
+            <td>
+                <input name="teamName" type="text" value="<%=datas[0].teamName %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="btn" type="submit" value="submit">
+            </td>
+        </tr>
+
+        </form>
+    </table>
+ 
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <a class="back" href="/score">Back</a>
+    <h1 class="info_h1">Update a scoring data</h1>
+
+    <table>
+        <form class="form-horizontal" action="/score/update" method="post">
+
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>PlayerNum</span>
+                </td>
+                <td>
+                    <input type="hidden" name="playerNum" value="<%=datas[0].playerNum %>">
+                </td>
+            </tr>
+
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>GP</span>
+            </td>
+            <td>
+                <input name="GP" type="text" value="<%=datas[0].GP %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>GS</span>
+            </td>
+            <td>
+                <input name="GS" type="text" value="<%=datas[0].GS %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>MPG</span>
+            </td>
+            <td>
+                <input name="MPG" type="text" value="<%=datas[0].MPG %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>PPG</span>
+            </td>
+            <td>
+                <input name="PPG" type="text" value="<%=datas[0].PPG %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>FGM</span>
+            </td>
+            <td>
+                <input name="FGM" type="text" value="<%=datas[0].FGM %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>FGA</span>
+            </td>
+            <td>
+                <input name="FGA" type="text" value="<%=datas[0].FGA %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>FGper</span>
+            </td>
+            <td>
+                <input name="FGper" type="text" value="<%=datas[0].FGper %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>FGM_3</span>
+            </td>
+            <td>
+                <input name="FGM_3" type="text" value="<%=datas[0].FGM_3 %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>FGMper_3</span>
+            </td>
+            <td>
+                <input name="FGMper_3" type="text" value="<%=datas[0].FGMper_3 %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>FTM</span>
+            </td>
+            <td>
+                <input name="FTM" type="text" value="<%=datas[0].FTM %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>FTA</span>
+            </td>
+            <td>
+                <input name="FTA" type="text" value="<%=datas[0].FTA %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+    
+            <!-- Text -->
+            <tr>
+                <td>
+                <span>FTper</span>
+            </td>
+            <td>
+                <input name="FTper" type="text" value="<%=datas[0].FTper %>" class="leipiplugins" leipiplugins="text">
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                <input class="btn" type="submit" value="submit">
+            </td>
+        </tr>
+        
+        </form>
+    </table>
+ 
+</body>
+
+</html>

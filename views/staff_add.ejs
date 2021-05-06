@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add staff</title>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <a class="back" href="/staff">Back</a>
+    <h1 class="info_h1">Add a new Staff</h1>
+
+    <table class="staff_add_table">
+
+        <form class="form-horizontal" action="/staff/add" method="post">
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>StaffNo</span>
+                </td>
+                <td>
+                    <input name="staffNo" type="text" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>Firstname</span>
+                </td>
+                <td>
+                    <input name="firstName" type="text" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>Lastname</span>
+                </td>
+                <td>
+                    <input name="lastName" type="text" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>Title</span>
+                </td>
+                <td>
+                    <input name="title" type="text" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>TeamName</span>
+                </td>
+                <td>
+                    <input name="teamName" type="text" placeholder="Celtics" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>PlayerID</span>
+                </td>
+                <td>
+                    <input name="playerID" type="text" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input class="btn" type="submit" value="submit">
+                </td>
+            </tr>
+        </form>
+    </table>
+
+</body>
+
+</html>

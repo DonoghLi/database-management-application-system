@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <a class="back" href="/main">Back</a>
+    <h1 class="info_h1">Sponser Data</h1>
+    <table class="info_table">
+        <tr>
+            <th>SponserID</th>
+            <th>Name</th>
+            <th>StartTime</th>
+            <th>TeamName</th>
+
+            <th>
+                <form action="/sponser/add" method="get">
+                    <button class="btn add" type="submit">Add</button>
+                </form>
+            </th>
+
+        </tr>
+        <%for(let i = 0; i < row; i++){%>
+        <tr>
+            <td><%=result[i].sponserID%></td>
+            <td><%=result[i].name%></td>
+            <td><%=result[i].startTime%></td>
+            <td><%=result[i].teamName%></td>
+            <td>
+                <a class="delete" href="/sponser/del/<%= result[i].sponserID %>">Delete</a>
+                <a class="update" href="/sponser/update/<%= result[i].sponserID %>">Update</a>
+            </td>
+        </tr>
+        <%}%>
+        
+    </table>
+
+</body>

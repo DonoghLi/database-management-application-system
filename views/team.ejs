@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <a class="back" href="/main">Back</a>
+    <h1 class="info_h1">Boston Celtics</h1>
+    <table class="team_table">
+
+        <tr>
+            <th>Name</th>
+            <th>Stadium</th>
+            <th>Address_city</th>
+            <th>Address_road</th>
+            <th>Address_zipCode</th>
+
+        </tr>
+        <%for(let i = 0; i < row; i++){%>
+        <tr>
+
+            <td><%=result[i].name%></td>
+            <td><%=result[i].stadium%></td>
+            <td><%=result[i].address_city%></td>
+            <td><%=result[i].address_road%></td>
+            <td><%=result[i].address_zipCode%></td>
+        </tr>
+        <%}%>
+        
+    </table>
+
+</body>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <a class="back" href="/defence">Back</a>
+    <h1 class="info_h1">Update a defence data</h1>
+
+    <table>
+        <form class="form-horizontal" action="/defence/update" method="post">
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>PlayerNum</span>
+                </td>
+                <td>
+                    <input type="hidden" name="playerNum" value="<%=datas[0].playerNum %>">
+                </td>
+            </tr>
+
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>GP</span>
+                </td>
+                <td>
+                    <input name="GP" type="text" value="<%=datas[0].GP %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>GS</span>
+                </td>
+                <td>
+                    <input name="GS" type="text" value="<%=datas[0].GS %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>OREB</span>
+                </td>
+                <td>
+                    <input name="OREB" type="text" value="<%=datas[0].OREB %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>DREB</span>
+                </td>
+                <td>
+                    <input name="DREB" type="text" value="<%=datas[0].DREB %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>REB</span>
+                </td>
+                <td>
+                    <input name="REB" type="text" value="<%=datas[0].REB %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>RPG</span>
+                </td>
+                <td>
+                    <input name="RPG" type="text" value="<%=datas[0].RPG %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>STL</span>
+                </td>
+                <td>
+                    <input name="STL" type="text" value="<%=datas[0].STL %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>SPG</span>
+                </td>
+                <td>
+                    <input name="SPG" type="text" value="<%=datas[0].SPG %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>BLK</span>
+                </td>
+                <td>
+                    <input name="BLK" type="text" value="<%=datas[0].BLK %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+
+            <!-- Text -->
+            <tr>
+                <td>
+                    <span>BPG</span>
+                </td>
+                <td>
+                    <input name="BPG" type="text" value="<%=datas[0].BPG %>" class="leipiplugins" leipiplugins="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="btn" type="submit" value="submit">
+                </td>
+            </tr>
+        </form>
+    </table>
+
+</body>
+
+</html>

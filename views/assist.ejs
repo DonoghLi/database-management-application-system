@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <a class="back" href="/main">Back</a>
+    <h1 class="info_h1">Assist Data</h1>
+    <table class="info_table">
+        <tr>
+            <th>PlayerNum</th>
+            <th>GP</th>
+            <th>GS</th>
+            <th>AST</th>
+            <th>APG</th>
+            <th>TOPG</th>
+            <th>ATO</th>
+        </tr>
+        <%for(let i = 0; i < row; i++){%>
+        <tr>
+
+            <td><%=result[i].playerNum%></td>
+            <td><%=result[i].GP%></td>
+            <td><%=result[i].GS%></td>
+            <td><%=result[i].AST%></td>
+            <td><%=result[i].APG%></td>
+            <td><%=result[i].TOPG%></td>
+            <td><%=result[i].ATO%></td>
+
+            <td>
+                <a class="delete" href="/assist/del/<%= result[i].playerNum %>">Delete</a>
+                <a class="update" href="/assist/update/<%= result[i].playerNum %>">Update</a>
+            </td>
+        </tr>
+        <%}%>
+        
+    </table>
+
+</body>

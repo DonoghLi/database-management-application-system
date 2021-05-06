@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <a class="back" href="/main">Back</a>
+    <h1 class="info_h1">Coach Information</h1>
+    <table class="coach_table">
+        <tr>
+            <th>StaffNo</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Title</th>
+            <th>Years</th>
+            <th>TeamName</th>
+
+            <th>
+                <form action="/coach/add" method="get">
+                    <button class="add btn" type="submit">Add</button>
+                </form>
+            </th>
+
+        </tr>
+        <%for(let i = 0; i < row; i++){%>
+        <tr>
+            <td><%=result[i].staffNo%></td>
+            <td><%=result[i].firstName%></td>
+            <td><%=result[i].lastName%></td>
+            <td><%=result[i].title%></td>
+            <td><%=result[i].years%></td>
+            <td><%=result[i].teamName%></td>
+            <td>
+                <a class="delete" href="/coach/del/<%= result[i].staffNo %>">Delete</a>
+                <a class="update" href="/coach/update/<%= result[i].staffNo %>">Update</a>
+            </td>
+        </tr>
+        <%}%>
+        
+    </table>
+    <h1 class="coach_add_h1">Search coachs that help team more than
+        <span>
+            <form action="/coach" method="post">
+                <input type="number" name="y">
+                <button type="submit">Submit</button>
+            </form>
+        </span>
+        years.</h1>
+</body>
